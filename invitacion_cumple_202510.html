@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Estás Invitado! Cumpleaños de Anita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Asegura que el contenido se ajuste a la altura de la pantalla en móviles */
+            height: 100vh;
+            overflow: hidden;
+        }
+        .fancy-font {
+            font-family: 'Pacifico', cursive;
+        }
+        .card-bg {
+            background-color: #FFF8F0;
+            background-image:
+                radial-gradient(circle at 100% 0%, #ffe9d1 0%, #fff8f0 30%),
+                radial-gradient(circle at 0% 100%, #ffe9d1 0%, #fff8f0 30%);
+        }
+        /* Ajustes para que el contenido no haga scroll */
+        .no-scroll-container {
+            transform: scale(0.95);
+            transform-origin: top center;
+        }
+        @media (max-height: 700px) {
+             .no-scroll-container {
+                transform: scale(0.85);
+             }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center">
+    
+    <!-- Contenedor principal de la tarjeta --><div class="card-bg w-full max-w-md mx-auto shadow-2xl rounded-3xl p-4 text-center text-gray-800 overflow-hidden relative no-scroll-container">
+        
+        <!-- Confeti decorativo --><div class="absolute top-0 left-0 text-2xl opacity-70 transform -translate-x-4 -translate-y-4">🎉</div>
+        <div class="absolute top-5 right-5 text-xl opacity-60">💖</div>
+        <div class="absolute bottom-10 left-5 text-xl opacity-60">🥳</div>
+        <div class="absolute bottom-0 right-0 text-2xl opacity-70 transform translate-x-4 translate-y-4">✨</div>
+
+        <div class="relative z-10">
+            <h2 class="text-xl text-amber-600 fancy-font mb-1">¡Una noche mágica!</h2>
+            <h1 class="text-4xl font-black uppercase tracking-wider text-rose-500">¡Estás invitado!</h1>
+            
+            <p class="mt-2 text-md">A celebrar los fabulosos...</p>
+            
+            <p class="text-7xl font-black my-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">60 Años</p>
+
+            <p class="text-md">de nuestra increíble y querida</p>
+            <p class="text-4xl fancy-font my-2 text-amber-700">Anita</p>
+            
+            <!-- Foto de Anita --><div class="my-3 flex justify-center">
+                <img src="https://firebasestorage.googleapis.com/v0/b/varios-82356.firebasestorage.app/o/99c2cce3-7727-4c5f-bef2-5c97e53f3ce5.jpg?alt=media&token=94940976-4304-4ca5-a3b2-c8b4ff8234d8" alt="Foto de Anita sonriendo" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+            </div>
+
+            <p class="text-md font-semibold bg-rose-100 text-rose-800 rounded-xl p-2">
+                ...y para hacerlo inolvidable, será una<br>
+                <span class="text-2xl font-bold tracking-wide">¡FIESTA DE DISFRACES! 🎭🦸‍♀️</span>
+            </p>
+            <p class="mt-1 text-xs text-gray-600">¡Saca tu disfraz más creativo y ven a disfrutar! 🤩</p>
+
+            <div class="border-t-2 border-dashed border-amber-300 my-4"></div>
+
+            <!-- Detalles del Evento --><div class="space-y-2 text-left mx-auto max-w-xs text-gray-700 text-sm">
+                <div class="flex items-center">
+                    <div class="bg-amber-100 rounded-full p-2 mr-3">
+                        <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">Fecha:</p>
+                        <p>Sábado, 25 de Octubre</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-amber-100 rounded-full p-2 mr-3">
+                       <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">Hora:</p>
+                        <p>18:00 hrs.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-amber-100 rounded-full p-2 mr-3">
+                        <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">Lugar:</p>
+                        <p>Roble Americano 8746</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t-2 border-dashed border-amber-300 my-4"></div>
+
+            <p class="text-md italic text-gray-600">"Tu presencia es el mejor regalo."</p>
+
+            <p class="mt-2 text-xl font-bold">¡Te esperamos! ❤️</p>
+        </div>
+    </div>
+
+    <!-- Controles de música --><audio id="background-music" loop>
+        <!-- Música alegre y festiva --><source src="https://cdn.pixabay.com/download/audio/2022/08/04/audio_2d02518e73.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" class="fixed bottom-5 right-5 bg-rose-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center focus:outline-none">
+        <!-- Icono de Play --><svg id="play-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4.018 15.132A1.25 1.25 0 006.25 14.15V5.85a1.25 1.25 0 00-2.232-.982L.692 7.282a1.25 1.25 0 000 1.964l3.326 2.886zM8 5a1 1 0 00-1 1v8a1 1 0 001 1h2a1 1 0 001-1V6a1 1 0 00-1-1H8z"></path></svg>
+        <!-- Icono de Pausa (oculto) --><svg id="pause-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M5 6a1 1 0 00-1 1v6a1 1 0 002 0V7a1 1 0 00-1-1zm8 0a1 1 0 00-1 1v6a1 1 0 002 0V7a1 1 0 00-1-1z"></path></svg>
+    </button>
+    
+    <script>
+        const music = document.getElementById('background-music');
+        const toggleButton = document.getElementById('music-toggle');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        toggleButton.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                music.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
